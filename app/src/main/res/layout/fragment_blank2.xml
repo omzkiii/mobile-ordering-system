@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7A86E"
+    tools:context=".BlankFragment2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/iced_caffe_americano" />
+
+                    <LinearLayout
+                        style="@style/Menu"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Americano"
+                            android:textColor="#000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="170 php"
+                            android:textSize="24sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <Button
+                                android:id="@+id/ia_min_btn"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="-" />
+
+
+                            <TextView
+                                android:id="@+id/ia_txt"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/ia_add_btn"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="+" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/iced_caffe_latte" />
+
+                    <LinearLayout
+                        style="@style/Menu"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Caffe Latte"
+                            android:textColor="#000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="170 php"
+                            android:textSize="24sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <Button
+                                android:id="@+id/il_min_btn"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="-" />
+
+
+                            <TextView
+                                android:id="@+id/il_txt"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/il_add_btn"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="+" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/iced_caffe_mocha" />
+
+                    <LinearLayout
+                        style="@style/Menu"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Caffe Mocha"
+                            android:textColor="#000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="170 php"
+                            android:textSize="24sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <Button
+                                android:id="@+id/im_min_btn"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="-" />
+
+
+                            <TextView
+                                android:id="@+id/im_txt"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/im_add_btn"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="+" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/iced_caramel_macchiato" />
+
+                    <LinearLayout
+                        style="@style/Menu"
+                        android:padding="20dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Macchiato"
+                            android:textColor="#000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="170 php"
+                            android:textSize="24sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <Button
+                                android:id="@+id/icm_min_btn"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="-" />
+
+
+                            <TextView
+                                android:id="@+id/icm_txt"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/icm_add_btn"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="+" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/iced_green_tea_latte" />
+
+                    <LinearLayout
+                        style="@style/Menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Green Tea"
+                            android:textColor="#000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="170 php"
+                            android:textSize="24sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <Button
+                                android:id="@+id/igt_min_btn"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="-" />
+
+
+                            <TextView
+                                android:id="@+id/igt_txt"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/igt_add_btn"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="+" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/iced_white_chocolate_mocha" />
+
+                    <LinearLayout
+                        style="@style/Menu"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="White Mocha"
+                            android:textColor="#000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="170 php"
+                            android:textSize="24sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <Button
+                                android:id="@+id/iw_min_btn"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="-" />
+
+
+                            <TextView
+                                android:id="@+id/iw_txt"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/iw_add_btn"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="+" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
